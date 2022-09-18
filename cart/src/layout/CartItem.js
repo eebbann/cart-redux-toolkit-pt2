@@ -1,4 +1,4 @@
-const CartItem =[{
+const cartItem =[{
 	id: 1,
 	title: 'Samsung Galaxy',
 	price: '989.99',
@@ -7,7 +7,7 @@ const CartItem =[{
 }, {
 		id: 2,
 		title: 'Apple Galaxy',
-		price: '400.00',
+		price: '400.00', 
 		img:'https://purepng.com/public/uploads/large/purepng.com-apple-iphone-xappleapple-iphonephonesmartphonemobile-devicetouch-screeniphone-xiphone-10electronicsobjects-251530689596wod8s.png',
 	amount:5, 
 },{
@@ -18,3 +18,5 @@ const CartItem =[{
 	amount:1,
 }
 ]
+
+export default cartItem;

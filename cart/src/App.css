@@ -1,11 +1,14 @@
  
- body{
+ body,html{
 	margin:0;
 	box-sizing: content-box;
+	font-family: 'Nunito', sans-serif;
  }
- main{
-	position: absolute;
+ .main{
+	/* position: absolute; */
 	width: 100%;
+	top: 0;
+	margin-bottom:30em !important;
 	margin:0px;
 	border-bottom: 0.9px solid rgba(128, 128, 128, 0.116);
 	background-color: rgb(108, 161, 222);
@@ -36,3 +39,4 @@
 	border-radius: 20px;
    padding:5px;
  }
+  
