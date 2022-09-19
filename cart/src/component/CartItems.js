@@ -5,6 +5,12 @@ import { useDispatch } from "react-redux";
 
  function CartItems({id,title,img,price,amount}) {
 	const dispatch = useDispatch()
+
+	if(amount <= 0)  { 
+		// alert ("are you sure you want to remove item")
+	 return 
+	}
+
 	 return <div className="container">
 		<section className="product">
        <div className="product_detail">
@@ -19,9 +25,9 @@ import { useDispatch } from "react-redux";
 				
 			 </div>
 			 <div className="prod_action">
-           <span className="action" onClick={()=>dispatch(increaseItem(id))}>+</span>
+           <span className="action" onClick={()=>dispatch(increaseItem({id}))}>+</span>
 					 <p>{amount}</p>
-					<span className="action" >-</span>
+					<span className="action"onClick={()=>dispatch(decreaseItem({id}))} >-</span>
 			 </div>
 
 		</section>
